@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scandal ranker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!--link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen"-->
+    <link href="css/ranker.css" rel="stylesheet" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="js/lib/jquery.ui.touch-punch.min.js"></script>
+	  <script type="text/javascript" src="js/lib/miso.ds.deps.js"></script>
+    <script src="js/ranker.js"></script>
+
+  </head>
+  
+  <body>
+   
+      <div class="container">
+
+        <div id="titlegraphic">
+            <h1>Scandal ranker</h1>
+			<p class="desc">How would you rank the scandals that have hit the presidency since the inception of the republic?</p>
+ 
+			<p class="desc">Drag the headlines up or down to rank the 12 below with your most scandalous on top. When you submit your results, you’ll see how your choices compare with those of other voters.</p>
+        </div>
+      
+        <div id="statsCon">
+    
+            <div id="statsAll" class="connectedSortable">
+             
+              <div class="imp">RANK THE SCANDALS</div>
+              <div id="sortableStats">
+					<div id="a1" class="dragger"><input type="checkbox" id="a1" class="statsCheck" onchange="cbChanged(this,1);"><p>Seed</p></div>
+					<div id="a2" class="dragger"><input type="checkbox" id="a2" class="statsCheck" onchange="cbChanged(this,2);"><p>RPI</p></div>
+					<div id="a3" class="dragger"><input type="checkbox" id="a3" class="statsCheck" onchange="cbChanged(this,3);" ><p>Win percentage</p></div>
+					<div id="a4" class="dragger"><input type="checkbox" id="a4" class="statsCheck" onchange="cbChanged(this,4);"><p>Scoring margin</p></div>
+					<div id="a5" class="dragger"><input type="checkbox" id="a5" class="statsCheck" onchange="cbChanged(this,5);"><p>Rebound margin</p></div>
+					<div id="a6" class="dragger"><input type="checkbox" id="a6" class="statsCheck" onchange="cbChanged(this,6);"><p>Turnovers per game</p></div>
+					<div id="a7" class="dragger"><input type="checkbox" id="a7" class="statsCheck" onchange="cbChanged(this,7);"><p>Auto / At-large</p></div>
+					<div id="a8" class="dragger"><input type="checkbox" id="a8" class="statsCheck" onchange="cbChanged(this,8);" ><p>Conference</p></div>
+               </div>
+              <!--div class="imp">LESS SCANDALOUS</div-->
+              <div id="shorts">
+                <p><a href="#" id="submitbtn">Submit your rankings</a></p>
+                <p><a href="#" id="reset">Reset</a></p>
+              </div>
+
+          </div>
+            
+            
+            <div id="rankResults">
+             
+              <div class="imp">SURVEY SAYS:</div>
+              <div id="resultsList">
+
+              </div>
+              <!--div class="imp">LEAST SCANDALOUS</div-->
+              <div id="shorts">
+                <p><a href="#" id="return">Return to your rankings</a></p>
+              </div>
+
+          </div>
+
+       </div> <!-- /container custom -->
+
+    <script src="js/lib/bootstrap.min.js"></script>
+        
+    
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37303540-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  
+  </body>
+</html>
