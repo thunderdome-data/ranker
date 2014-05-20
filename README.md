@@ -4,7 +4,9 @@ Ranker
 What is this?
 -------------
 A drag and drop news quiz to collect users' arrangements of a list of choices.
-http://data.digitalfirstmedia.com/ranker/ranker.html
+Demo: http://www.mercurynews.com/ci_23306295/dirty-dozen-how-do-you-rank-12-presidential
+
+![ranker inaction](screenshots/ranker.png)
 
 Credits
 ---------
