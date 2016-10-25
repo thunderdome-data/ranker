@@ -30,6 +30,16 @@ The project contains the following folders and important files:
 * ``incl`` -- PHP file "ranker.php" for recording user's selections/votes
 * ``css`` -- Base css files to get rolling with.
 
+### What needs configuring?
+
+* ranker.html body markup
+* js/ranker.js lines 70, 73 (maybe move those to html file)
+* incl/ranker.php to point to the correct table
+
+## To-do's
+
+[ ] Create a database structure so we don't have to create a new table with each thing we want to rank
+[ ] Modify the server request so we don't need a different ranker.php for each thing we want to rank
 
 License
 ----------
