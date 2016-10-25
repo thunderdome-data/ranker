@@ -38,8 +38,8 @@ The project contains the following folders and important files:
 
 ## To-do's
 
-[ ] Create a database structure so we don't have to create a new table with each thing we want to rank
-[ ] Modify the server request so we don't need a different ranker.php for each thing we want to rank
+- [ ] Create a database structure so we don't have to create a new table with each thing we want to rank
+- [ ] Modify the server request so we don't need a different ranker.php for each thing we want to rank
 
 License
 ----------
