@@ -16,11 +16,11 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- --------------------------------------------------------
 
 --
--- Table structure for table 'ranker_scandals'
+-- Table structure for table 'scandals'
 --
 
-DROP TABLE IF EXISTS news.ranker_scandals;
-CREATE TABLE news.ranker_scandals (
+DROP TABLE IF EXISTS ranker.scandals;
+CREATE TABLE ranker.scandals (
   id int(3) NOT NULL AUTO_INCREMENT,
   ranker_id varchar(11) NOT NULL,
   title varchar(256) NOT NULL,
@@ -29,10 +29,10 @@ CREATE TABLE news.ranker_scandals (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
--- Dumping data for table 'ranker_scandals'
+-- Dumping data for table 'scandals'
 --
 
-INSERT INTO news.ranker_scandals (id, ranker_id, title, rank_total) VALUES
+INSERT INTO ranker.scandals (id, ranker_id, title, rank_total) VALUES
 (1, 'a1', 'A. Johnson: Impeachment (1868)', 0),
 (2, 'a2', 'Grant: The Whiskey Ring (1875)', 0),
 (3, 'a3', 'Harding: Teapot Dome (1921-23)', 0),
