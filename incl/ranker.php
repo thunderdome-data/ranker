@@ -43,14 +43,10 @@ if ($_GET):
 	
 endif;
 
-?>                
-			<?php
-			
-				$rlen = count($rankings);
-				for ($i = 0; $i < $rlen-1; $i++):
-
-					$userrank = array_search($rankings[$i]['ranker_id'], $rankList) ?>
-	
-					<div class="dragger"><p><?php echo $i+1 ?>. <?php echo $rankings[$i]['title'] ?><span class="urank">You said: <?php echo $userrank+1; ?></span></p></div>
+$rlen = count($rankings);
+for ($i = 0; $i < $rlen-1; $i++):
+    $userrank = array_search($rankings[$i]['ranker_id'], $rankList);
+?>
+    <div class="dragger"><p><?php echo $i+1 ?>. <?php echo $rankings[$i]['title'] ?><span class="urank">You said: <?php echo $userrank+1; ?></span></p></div>
 					
 <?php endfor;
