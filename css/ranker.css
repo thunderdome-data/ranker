@@ -25,6 +25,7 @@ body {
 
 #statsCon .dragger { 
 	min-height: 25px; border: 1px solid #DDD; margin-top: 2px; 
+    margin-right: 20px;
 	background-image: linear-gradient(bottom, rgb(236,236,236) 72%, rgb(226,226,226) 51%);
 	background-image: -o-linear-gradient(bottom, rgb(236,236,236) 72%, rgb(226,226,226) 51%);
 	background-image: -moz-linear-gradient(bottom, rgb(236,236,236) 72%, rgb(226,226,226) 51%);
