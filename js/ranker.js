@@ -66,12 +66,12 @@ $(document).ready(function(){ // begin document.ready block
 
 function buildSortStats() {
 	
-    // MOVED THESE VARS TO THE HTML FILE TO REDUCE THE NUMBER OF FILES
+    // MOVED THIS VAR TO THE HTML FILE TO REDUCE THE NUMBER OF FILES
     // WE HAVE TO CHANGE FOR EACH RANKER WE WANT
 	// array of sortableStats titles and ids
 	//var statNames = {'a1':'1868: A. Johnson: Impeachment', 'a2':'1875: Grant: The Whiskey Ring','a3':'1921-23: Harding: Teapot Dome','a4':'1973: Nixon: Watergate','a5':'1973: Nixon: Agnew resignation','a6':'1986: Reagan: Iran-Contra affair','a7':'1998: Clinton: Lewinsky affair','a8':'2006-2007: Bush: U.S. attorneys', 'a9':'2007: Bush: Valerie Plame', 'a10': '2012: Obama: Benghazi', 'a11': '2013: Obama: IRS', 'a12': '2013: Obama: AP phone records'};
+	var fullStats = Object.keys(statNames);
 	// compares sortedIDs[] to full list of stats and adds whatever is missing
-	//var fullStats = ['a1', 'a2', 'a3', 'a4','a5', 'a6', 'a7', 'a8','a9','a10','a11','a12'];
 	
 	var exStats = new Array();
 	exStats = jQuery.grep(fullStats,function (item) {
