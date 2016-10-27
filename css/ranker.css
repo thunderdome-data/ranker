@@ -5,7 +5,7 @@ body {
     color: rgb(51, 51, 51);
 }
 
-.container { margin: 0; width: 300px; padding: 10px; border: 1px solid #bbb; }
+.container { margin: 0; min-width: 300px; width: 100%: padding: 10px; border: 1px solid #bbb; }
 
 .desc { text-align: left; font: 12px Arial; margin-top: 10px; color: #666; }*/
 
@@ -24,7 +24,7 @@ body {
 #shorts p { margin: 0 10px 24px 10px; float: left;}
 
 #statsCon .dragger { 
-	height: 25px; border: 1px solid #DDD; margin-top: 2px; 
+	min-height: 25px; border: 1px solid #DDD; margin-top: 2px; 
 	background-image: linear-gradient(bottom, rgb(236,236,236) 72%, rgb(226,226,226) 51%);
 	background-image: -o-linear-gradient(bottom, rgb(236,236,236) 72%, rgb(226,226,226) 51%);
 	background-image: -moz-linear-gradient(bottom, rgb(236,236,236) 72%, rgb(226,226,226) 51%);
@@ -43,13 +43,36 @@ body {
 #statsCon .dragger:hover { cursor: move; }
 #statsCon #a0,#a1,#a2,#a3,#a4,#a5,#a6,#a7,#a8,#a9 { position: relative;}
 
-.dragger p { font-family: 'Open Sans Condensed', sans-serif; color: #000; font-size: 12px; text-transform: uppercase; font-weight: bold; margin-top: 4px; margin-left: 4px; text-shadow: 0.1em 0.1em #CCC }
+.dragger p { 
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 4px 0 0 4px;
+    text-shadow: 0.1em 0.1em #CCC;
+}
 .dragger img { float: left; margin: 10px 5px 0 10px }
 
-.urank { font: 11px Arial; font-weight: bold; color: rgb(143, 50, 83);  margin: 3px 4px 3px 1px; float: right; text-transform: none; }
-.voteperc { font: 11px Arial; font-weight: bold; color: rgb(36, 58, 172); margin: 3px 4px 7px 4px; text-transform: none; }
+.urank { font: 11px Arial;
+    font-weight: bold;
+    color: rgb(143, 50, 83);
+     margin: 3px 4px 3px 1px;
+    float: right;
+    text-transform: none;
+    }
+.voteperc { font: 11px Arial;
+    font-weight: bold;
+    color: rgb(36, 58, 172);
+    margin: 3px 4px 7px 4px;
+    text-transform: none;
+    }
 
-.dd { width: 100%; margin-top: 3px; height: 40px; text-align: center; font-size: 18px; font-weight: bold}
+.dd { width: 100%;
+    margin-top: 3px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold}
 #drops { margin-top: 10px; text-align: center; }
 #drops .imp { font: 10px Arial; color: #CCC; margin-top: 4px;  }
 #gobtn { margin-left:auto; margin-right:auto; display: inline-block; }
