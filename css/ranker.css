@@ -19,9 +19,9 @@ body {
 .statsHead { font-family: 'Open Sans Condensed', sans-serif; color: #000; font-size: 14px; margin: 0 0 5px 0; font-weight: bold; }
 #statsCon .instruct { font: italic 12px Arial; margin-bottom: 10px}
 #statsCon .imp { font: 11px Arial; color: #333;  margin-top: 6px; margin-left: 5px }
-#shorts { margin: 5px 0 24px 0; }
-#shorts a { font: 14px Arial; color: #7ebee4; text-decoration: none; }
-#shorts p { margin: 0 10px 24px 10px; float: left;}
+#shorts { margin: 10px; }
+#shorts a { font: 14px Arial; color: #006; text-decoration: none; }
+#shorts button { }
 
 #statsCon .dragger { 
 	min-height: 25px; border: 1px solid #DDD; margin-top: 2px; 
