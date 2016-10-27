@@ -11,7 +11,7 @@ overview: captures users ranked selections and inserts them into data table. ret
 *******************************************************************************/
 		
 	require_once 'Connection.class.php';
-	$connection = new Connection('','ranker');
+	$connection = new Connection('ranker','ranker');
 
 ## variables to hold URL variables
 $rankingsAll;
@@ -19,6 +19,7 @@ $rankList;
 $rankings;
 $votingtotal;
 $vtotal;
+$table = 'trump';
 
 if ($_GET):
 
@@ -30,13 +31,13 @@ if ($_GET):
 	
 	for ($i = 0; $i < $len; $i++):
 		//echo $rankList[$i];
-		$sql = "UPDATE scandals
+		$sql = "UPDATE $table
 					SET	rank_total = rank_total + ($len - $i)
 					WHERE ranker_id = '$rankList[$i]'";
 		$results = mysqli_query($connection->con,$sql);
     endfor;
 
-	$sql = "SELECT * from scandals
+	$sql = "SELECT * from $table
 			order by rank_total desc";
 	$results = mysqli_query($connection->con,$sql);
 	while($rankings[]=mysqli_fetch_array($results));
