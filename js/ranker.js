@@ -140,7 +140,6 @@ function shuffle(array) {
 
 	$('#reset').click(function () {
     	$("#sortableStats").html(resetText);
-
 	});
 
 	$('#return').click(function () {
