@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scandal ranker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <!-- Bootstrap -->
+    <!--link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen"-->
+    <link href="css/ranker.css" rel="stylesheet" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="js/lib/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/lib/miso.ds.deps.js"></script>
+    <script src="js/ranker.js"></script>
+    <script>
+	// array of sortableStats titles and ids
+	var statNames = {
+    'a1':'Calling Mexicans “rapists” and “drug dealers” at announcement of campaign',
+    'a2':'Saying Sen. John McCain isn\'t a war hero because he was captured',
+    'a3':'Saying debate moderator Megyn Kelly had “blood coming out of her wherever”',
+    'a4':'Refusing to reject Ku Klux Klan leader David Duke\'s support',
+    'a5':'Referencing the size of his genitals during a primary debate',
+    'a6':'Mimicking a disabled reporter at a campaign rally',
+    'a7':'Questions and lawsuits regarding the former Trump University',
+    'a8':'Claiming a judge was unable to be impartial in a case because of his Mexican heritage',
+    'a9':'Feud with Gold Star parents Khizr and Ghazala Khan, whose son was killed in Iraq',
+    'a10': 'Comments about groping and kissing women in "Access Hollywood” video',
+    'a11': 'Comments about women who said he groped them: “She wouldn’t be my first choice”',
+    'a12': 'Retweet of image with Hillary Clinton and the Star of David from anti-Semitic website',
+    'a13': 'Use of Trump foundation funds to pay his private legal fees',
+    'a14': 'Attacks on House Speaker Paul Ryan and other GOP leaders',
+    'a15': 'Linking Sen. Ted Cruz\'s dad to Lee Harvey Oswald and the assassination of JFK',
+    'a16': 'Threatening to “spill the beans” on Heidi Cruz, then insulting her looks on Twitter',
+    'a17': 'Video of Trump saying about child on escalator: “I’m going to be dating her in 10 years”',
+    'a18': 'Saying the "Second Amendment people" could do something about Hillary Clinton',
+    'a19': 'Egging on violence against protesters and offering to pay supporters’ legal fees',
+    'a20': 'Not paying federal income taxes and saying, "That makes me smart"',
+    'a21': 'Proposal to ban Muslims from entering the United States',
+    'a22': 'Suggesting he\'d jail Hillary Clinton over her e-mails when he’s president',
+    'a23': 'Encouraging Russia to hack Hillary Clinton’s e-mails and publish them',
+    'a24': 'Refusing to say he’d accept the results of the election if he loses',
+    'a25': '3 a.m. tweet about Miss Universe winner Alicia Machado: "check out sex tape"',
+};
+    </script>
+  </head>
+  
+  <body>
+   
+      <div class="container">
+
+        <div id="titlegraphic">
+            <h1>Ranking Trump's scandals</h1>
+			<p>How would you rank these 25 potentially damning things that Donald Trump has done or said &ndash; or have come to light &ndash; during his campaign for the presidency?</p>
+ 
+			<p class="desc">Drag the items up or down to rank them, with the most damning on top. When you submit your results, you'll see how your choices compare with those of other readers.</p>
+        </div>
+      
+        <div id="statsCon">
+    
+            <div id="statsAll" class="connectedSortable">
+             
+              <div id="sortableStats">
+					<div id="a1" class="dragger"><input type="checkbox" id="a1" class="statsCheck" onchange="cbChanged(this,1);"><p></p></div>
+					<div id="a2" class="dragger"><input type="checkbox" id="a2" class="statsCheck" onchange="cbChanged(this,2);"><p></p></div>
+					<div id="a3" class="dragger"><input type="checkbox" id="a3" class="statsCheck" onchange="cbChanged(this,3);" ><p</p></div>
+					<div id="a4" class="dragger"><input type="checkbox" id="a4" class="statsCheck" onchange="cbChanged(this,4);"><p></p></div>
+					<div id="a5" class="dragger"><input type="checkbox" id="a5" class="statsCheck" onchange="cbChanged(this,5);"><p></p></div>
+					<div id="a6" class="dragger"><input type="checkbox" id="a6" class="statsCheck" onchange="cbChanged(this,6);"><p></p></div>
+					<div id="a7" class="dragger"><input type="checkbox" id="a7" class="statsCheck" onchange="cbChanged(this,7);"><p></p></div>
+					<div id="a8" class="dragger"><input type="checkbox" id="a8" class="statsCheck" onchange="cbChanged(this,8);" ><p></p></div>
+					<div id="a9" class="dragger"><input type="checkbox" id="a9" class="statsCheck" onchange="cbChanged(this,9);" ><p></p></div>
+               </div>
+              <!--div class="imp">LESS SCANDALOUS</div-->
+              <div id="shorts">
+                <button><a href="#" id="submitbtn">Submit your rankings</a></button>
+              </div>
+
+          </div>
+            
+            
+            <div id="rankResults">
+             
+              <div class="imp">SURVEY SAYS:</div>
+              <div id="resultsList">
+
+              </div>
+              <!--div class="imp">LEAST SCANDALOUS</div-->
+
+          </div>
+
+       </div> <!-- /container custom -->
+
+    <script src="js/lib/bootstrap.min.js"></script>
+  </body>
+</html>
