@@ -1,26 +1,21 @@
-Ranker
-========================
+# Ranker
 
-What is this?
--------------
+## What is this?
 A drag and drop news quiz to collect users' arrangements of a list of choices.
-Demo: http://www.mercurynews.com/ci_23306295/dirty-dozen-how-do-you-rank-12-presidential
+Demo: http://www.denverpost.com/2016/10/28/rank-these-25-donald-trump-campaign-scandals/
 
 ![ranker inaction](screenshots/ranker.png)
 
-Credits
----------
+## Credits
 Peggy Bustamante
 
-Assumptions
------------
+## Assumptions
 
 * JQuery
 * Miso
 
 
-What's in here?
----------------
+## What's in here?
 
 The project contains the following folders and important files:
 
@@ -41,7 +36,6 @@ The project contains the following folders and important files:
 - [ ] Create a database structure so we don't have to create a new table with each thing we want to rank
 - [ ] Modify the server request so we don't need a different ranker.php for each thing we want to rank
 
-License
-----------
+## License
 
 This code is available under the MIT license. For more information, please see the LICENSE.txt file in this repo.
