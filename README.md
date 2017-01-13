@@ -7,7 +7,7 @@ Demo: http://www.denverpost.com/2016/10/28/rank-these-25-donald-trump-campaign-s
 ![ranker inaction](screenshots/ranker.png)
 
 ## Credits
-Peggy Bustamante
+Peggy Bustamante, Joe Murphy
 
 ## Assumptions
 
